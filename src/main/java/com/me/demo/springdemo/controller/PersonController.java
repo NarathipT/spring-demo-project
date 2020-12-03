@@ -14,6 +14,7 @@ public class PersonController {
 
     @GetMapping("/person")
     public PersonDto person(){
+        logger.info("PersonController get /person");
         PersonDto personDto = new PersonDto();
         personDto.setFirstName("TestName");
         personDto.setLastName("TestLast");
